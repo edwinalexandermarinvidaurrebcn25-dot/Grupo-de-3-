@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PEDIDO [
+
+<!ELEMENT PEDIDO (CLIENTE, DIRECCION?, PRODUCTO+)>
+<!ELEMENT CLIENTE (#PCDATA)>
+<!ELEMENT DIRECCION (#PCDATA)>
+<!ELEMENT PRODUCTO (#PCDATA)>
+
+<!ATTLIST PRODUCTO TIPO CDATA #REQUIRED> 
+]>
+
+<pedido>
+    <cliente>Carlos</cliente>
+    <direccion>calle Santa Cristina 123</direccion>
+    <producto tipo="telefono">Samsung Galaxy A20</producto>
+    <producto tipo="ordenador">Apple iMac M4 RAM SSD</producto>
+</pedido>
